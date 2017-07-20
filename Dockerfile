@@ -4,9 +4,10 @@ ENV NYANCAT_VERSION 1.5.1
 
 # Installing Build Dependencies
 RUN apk add --no-cache --virtual .build-deps \
-	make \
 	gcc \
-	libc-dev
+	libc-dev \
+	make \
+	openssl
 
 # Building Nyancat
 RUN wget -q "https://github.com/klange/nyancat/archive/$NYANCAT_VERSION.tar.gz" \
