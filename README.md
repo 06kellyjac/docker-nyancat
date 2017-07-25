@@ -1,10 +1,15 @@
 [![Docker Stars](https://img.shields.io/docker/stars/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/) [![Docker Pulls](https://img.shields.io/docker/pulls/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/) [![Docker Build Status](https://img.shields.io/docker/build/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/)
 
+Changes need to be made at a later point due to adding new tags
+
 # Supported tags and respective `Dockerfile` links
 
-- `latest`
-  - Dockerhub: [(latest/alpine/Dockerfile)](https://hub.docker.com/r/06kellyjac/nyancat/~/dockerfile/)
-  - GitHub: [(latest/alpine/Dockerfile)](https://github.com/06kellyjac/docker-nyancat/blob/master/Dockerfile)
+- `latest`, `scratch`
+  - Dockerhub: [(latest/scratch/Dockerfile)](https://hub.docker.com/r/06kellyjac/nyancat/~/dockerfile/)
+  - GitHub: [(latest/scratch/Dockerfile)](https://github.com/06kellyjac/docker-nyancat/blob/master/Dockerfile)
+- `alpine`
+  - Dockerhub: [(alpine/Dockerfile)](https://hub.docker.com/r/06kellyjac/nyancat/~/dockerfile/)
+  - GitHub: [(alpine/Dockerfile)](https://github.com/06kellyjac/docker-nyancat/blob/master/Dockerfile)
 
 # Quick reference
 
@@ -29,8 +34,14 @@ The source used in this image:
 
 It's simple, just run the following in your terminal:
 
+Standard:
 ```bash
 docker run -it --rm --name nyancat 06kellyjac/nyancat
+```
+
+Alpine:
+```bash
+docker run -it --rm --name nyancat 06kellyjac/nyancat:alpine
 ```
 
 This command will create a docker container named `nyancat` that will remove its self when closed so you don't have to worry about running `docker rm nyancat` or anything.
