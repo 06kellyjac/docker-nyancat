@@ -1,6 +1,4 @@
-[![Docker Stars](https://img.shields.io/docker/stars/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/)
-[![Docker Build Statu](https://img.shields.io/docker/build/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/)
+[![Docker Stars](https://img.shields.io/docker/stars/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/) [![Docker Pulls](https://img.shields.io/docker/pulls/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/) [![Docker Build Status](https://img.shields.io/docker/build/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/)
 
 # Supported tags and respective `Dockerfile` links
 
@@ -20,7 +18,7 @@
 
 # What is Nyancat?
 
-Nyancat is pretty cool. The goal of this project was to make a lightweight image for Nyancat. This is a light Docker Image that's around 2MB (compressed) for terminal Nyancat.
+Nyancat is pretty cool. The goal of this project was to make a lightweight image for Nyancat. This is a light Docker Image that's 2MB compressed (on top of fresh Alpine 2MB compressed) for terminal Nyancat.
 
 Thanks go to [Klange](https://github.com/klange/) and [contributors](https://github.com/klange/nyancat/graphs/contributors) on Github for the nyancat source.
 
