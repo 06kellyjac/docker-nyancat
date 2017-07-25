@@ -5,11 +5,11 @@ Changes need to be made at a later point due to adding new tags
 # Supported tags and respective `Dockerfile` links
 
 - `latest`, `scratch`
-  - Dockerhub: [(latest/scratch/Dockerfile)](https://hub.docker.com/r/06kellyjac/nyancat/~/dockerfile/)
-  - GitHub: [(latest/scratch/Dockerfile)](https://github.com/06kellyjac/docker-nyancat/blob/master/Dockerfile)
+  - GitHub: [(latest/scratch/Dockerfile)](https://github.com/06kellyjac/docker-nyancat/blob/master/scratch/Dockerfile)
 - `alpine`
-  - Dockerhub: [(alpine/Dockerfile)](https://hub.docker.com/r/06kellyjac/nyancat/~/dockerfile/)
-  - GitHub: [(alpine/Dockerfile)](https://github.com/06kellyjac/docker-nyancat/blob/master/Dockerfile)
+  - GitHub: [(alpine/Dockerfile)](https://github.com/06kellyjac/docker-nyancat/blob/master/alpine/Dockerfile)
+
+The Docker file also visible on the Docker Hub page: [https://hub.docker.com/r/06kellyjac/nyancat/~/dockerfile/](https://hub.docker.com/r/06kellyjac/nyancat/~/dockerfile/)
 
 # Quick reference
 
@@ -23,7 +23,22 @@ Changes need to be made at a later point due to adding new tags
 
 # What is Nyancat?
 
-Nyancat is pretty cool. The goal of this project was to make a lightweight image for Nyancat. This is a light Docker Image that's 2MB compressed (on top of fresh Alpine 2MB compressed) for terminal Nyancat.
+Nyancat is pretty cool. The goal of this project was to make a lightweight image for Nyancat.
+
+There are two versions shipped:
+
+- `latest` / `scratch`
+  - 361KB Compressed
+    - built from `scratch` which is a special empty image
+  - Uses a binary compiled from the nyancat source code: [source](https://github.com/klange/nyancat)
+  - The binary runs on the Docker `scratch` image for absolute minimal size
+    - The binary was compiled with `make SHARED=0 CC='gcc -static'` to get a static binary if you want to build this image yourself with the nyancat source for additional peace of mind! 😊
+- `alpine`
+  - 2MB Compressed
+    - Built from `alpine` which is also 2MB Compressed for a total install of 4MB
+    - If you have `alpine` cached *(which you probably do)* you will only be downloading the 2MB
+  - Alpine is a very small version of linux and builds the source code from a zip provided here:
+    - [https://github.com/klange/nyancat/releases](https://github.com/klange/nyancat/releases)
 
 Thanks go to [Klange](https://github.com/klange/) and [contributors](https://github.com/klange/nyancat/graphs/contributors) on Github for the nyancat source.
 
