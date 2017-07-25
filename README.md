@@ -1,3 +1,7 @@
+[![Docker Stars](https://img.shields.io/docker/stars/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/)
+[![Docker Build Statu](https://img.shields.io/docker/build/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/)
+
 # Supported tags and respective `Dockerfile` links
 
 - `latest`
@@ -28,8 +32,12 @@ The source used in this image:
 It's simple, just run the following in your terminal:
 
 ```bash
-docker run -it --rm 06kellyjac/nyancat
+docker run -it --rm --name nyancat 06kellyjac/nyancat
 ```
+
+This command will create a docker container named `nyancat` that will remove its self when closed so you don't have to worry about running `docker rm nyancat` or anything.
+
+To exit press `Ctrl+C`
 
 # Licence
 
