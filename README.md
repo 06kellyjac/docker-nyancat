@@ -35,7 +35,7 @@ There are two versions shipped:
     - built from `scratch` which is a special empty image
   - Uses a binary compiled from the nyancat source code: [source](https://github.com/klange/nyancat)
   - The binary runs on the Docker `scratch` image for absolute minimal size
-    - The binary was compiled with `make SHARED=0 CC='gcc -static'` to get a static binary if you want to build this image yourself with the nyancat source for additional peace of mind! 😊
+    - The binary was compiled with `make SHARED=0 CC='gcc -static -s'` to get a static binary if you want to build this image yourself with the nyancat source for additional peace of mind! 😊
 - `alpine`
   - **2MB Compressed** + the base alpine image 2MB
     - Built from `alpine` which is also 2MB Compressed for a total install of 4MB
@@ -56,6 +56,7 @@ Standard:
 ```bash
 docker run -it --rm --name nyancat 06kellyjac/nyancat
 ```
+
 
 Alpine:
 ```bash
