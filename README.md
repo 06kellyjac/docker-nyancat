@@ -1,40 +1,43 @@
 [![Docker Stars](https://img.shields.io/docker/stars/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/) [![Docker Pulls](https://img.shields.io/docker/pulls/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/) [![Docker Build Status](https://img.shields.io/docker/build/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/)
 
-Changes need to be made at a later point due to adding new tags
-
 # Supported tags and respective `Dockerfile` links
 
-- `latest`, `scratch`
-  - GitHub: [(latest/scratch/Dockerfile)](https://github.com/06kellyjac/docker-nyancat/blob/master/scratch/Dockerfile)
-- `alpine`
-  - GitHub: [(alpine/Dockerfile)](https://github.com/06kellyjac/docker-nyancat/blob/master/alpine/Dockerfile)
+-	[`scratch`, `latest`: (*scratch/Dockerfile*)](https://github.com/06kellyjac/docker-nyancat/blob/master/scratch/Dockerfile)
+-	[`alpine`: (*alpine/Dockerfile*)](https://github.com/06kellyjac/docker-nyancat/blob/master/alpine/Dockerfile)
 
 The Docker file also visible on the Docker Hub page: [https://hub.docker.com/r/06kellyjac/nyancat/~/dockerfile/](https://hub.docker.com/r/06kellyjac/nyancat/~/dockerfile/)
 
 # Quick reference
 
-- **Where to get help:** [I have contact details on my Github](https://github.com/06kellyjac), [the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+-	**Where to get help**:  
+	[I have contact details on my Github](https://github.com/06kellyjac), [the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
-- **Where to file issues:** [https://github.com/06kellyjac/docker-nyancat/issues](https://github.com/06kellyjac/docker-nyancat/issues)
+-	**Where to file issues**:  
+	[https://github.com/06kellyjac/docker-nyancat/issues](https://github.com/06kellyjac/docker-nyancat/issues)
 
-- **Maintained by:** [06kellyjac on Github](https://github.com/06kellyjac)
+-	**Maintained by**:  
+	[06kellyjac on Github](https://github.com/06kellyjac)
 
-- **Source of this description:** [The github README.md](https://github.com/06kellyjac/docker-nyancat/blob/master/README.md) ([history](https://github.com/06kellyjac/docker-nyancat/commits/master/README.md))
+-	**Source of this description**:  
+	[The github README.md](https://github.com/06kellyjac/docker-nyancat/blob/master/README.md) ([history](https://github.com/06kellyjac/docker-nyancat/commits/master/README.md))
 
 # What is Nyancat?
 
-Nyancat is pretty cool. The goal of this project was to make a lightweight image for Nyancat.
+Nyancat is pretty cool. It's a poptart cat flying through space. 🐱‍🚀
 
+> [wikipedia.org/wiki/Nyan_Cat](https://en.wikipedia.org/wiki/Nyan_Cat)
+
+The goal of this project was to make a lightweight image for Nyancat.
 There are two versions shipped:
 
 - `latest` / `scratch`
-  - 361KB Compressed
+  - **361KB Compressed**
     - built from `scratch` which is a special empty image
   - Uses a binary compiled from the nyancat source code: [source](https://github.com/klange/nyancat)
   - The binary runs on the Docker `scratch` image for absolute minimal size
     - The binary was compiled with `make SHARED=0 CC='gcc -static'` to get a static binary if you want to build this image yourself with the nyancat source for additional peace of mind! 😊
 - `alpine`
-  - 2MB Compressed
+  - **2MB Compressed** + the base alpine image 2MB
     - Built from `alpine` which is also 2MB Compressed for a total install of 4MB
     - If you have `alpine` cached *(which you probably do)* you will only be downloading the 2MB
   - Alpine is a very small version of linux and builds the source code from a zip provided here:
