@@ -1,5 +1,7 @@
 [![Docker Stars](https://img.shields.io/docker/stars/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/) [![Docker Pulls](https://img.shields.io/docker/pulls/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/) [![Docker Build Status](https://img.shields.io/docker/build/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/)
 
+*Quicklink*: [How to use this image](#how-to-use-this-image)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`scratch`, `latest`: (*scratch/Dockerfile*)](https://github.com/06kellyjac/docker-nyancat/blob/master/scratch/Dockerfile)
@@ -50,7 +52,7 @@ Thanks go to [Klange](https://github.com/klange/) and [contributors](https://git
 The source used in this image:
 [https://github.com/klange/nyancat](https://github.com/klange/nyancat)
 
-# How to use this image.
+# How to use this image
 
 It's simple, just run the following in your terminal:
 
@@ -65,9 +67,9 @@ Alpine:
 docker run -it --rm --name nyancat 06kellyjac/nyancat:alpine
 ```
 
-This command will create a docker container named `nyancat` that will remove its self when closed so you don't have to worry about running `docker rm nyancat` or anything.
+These commands create a docker container named `nyancat` that will remove its self when closed so you don't have to worry about running `docker rm nyancat` or anything extra.
 
-To exit press `Ctrl+C`
+**To exit press `Ctrl+C`**
 
 # Licence
 
