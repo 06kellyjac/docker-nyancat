@@ -1,6 +1,8 @@
 [![Docker Stars](https://img.shields.io/docker/stars/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/) [![Docker Pulls](https://img.shields.io/docker/pulls/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/) [![Docker Build Status](https://img.shields.io/docker/build/06kellyjac/nyancat.svg?style=flat-square)](https://hub.docker.com/r/06kellyjac/nyancat/)
 
-*Quicklink*: [How to use this image](#how-to-use-this-image)
+Link: [How to use this image](https://github.com/06kellyjac/docker-nyancat/blob/master/README.md#how-to-use-this-image)  
+(Goes to GitHub as Docker Hub markdown doesn't add ids.  
+To stay on Docker Hub just scroll down.)
 
 # Supported tags and respective `Dockerfile` links
 
