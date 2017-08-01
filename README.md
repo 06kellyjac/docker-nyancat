@@ -8,8 +8,10 @@ To stay on Docker Hub just scroll down.)
 
 -	[`scratch`, `latest`: (*scratch/Dockerfile*)](https://github.com/06kellyjac/docker-nyancat/blob/master/scratch/Dockerfile)
 	- **332KB Compressed**
--	[`alpine`: (*alpine/Dockerfile*)](https://github.com/06kellyjac/docker-nyancat/blob/master/alpine/Dockerfile)
-	- **2MB Compressed** + the base alpine image 2MB
+-	[`alpine`, `alpine-latest` : (*alpine/Dockerfile*)](https://github.com/06kellyjac/docker-nyancat/blob/master/alpine/latest/Dockerfile)
+	- **2MB Compressed** + the base alpine:latest image 2MB
+-	[`alpine-3.6` : (*alpine-3.6/Dockerfile*)](https://github.com/06kellyjac/docker-nyancat/blob/master/alpine/3.6/Dockerfile)
+	- **2MB Compressed** + the base alpine:3.6 image 2MB
 
 The Docker file also visible on the Docker Hub page: [https://hub.docker.com/r/06kellyjac/nyancat/~/dockerfile/](https://hub.docker.com/r/06kellyjac/nyancat/~/dockerfile/)
 
@@ -62,8 +64,7 @@ Standard:
 ```bash
 docker run -it --rm --name nyancat 06kellyjac/nyancat
 ```
-
-
+  
 Alpine:
 ```bash
 docker run -it --rm --name nyancat 06kellyjac/nyancat:alpine
